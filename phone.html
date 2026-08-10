@@ -26,6 +26,24 @@
   .all span{display:block;margin-top:4px;font-size:12.5px;font-weight:700;
     opacity:.62;letter-spacing:0}
   .all.sm{margin:14px 0 0;padding:15px;font-size:15px;border-radius:14px}
+  .compare{margin-top:30px;background:var(--panel);border:1px solid var(--ring);
+    border-radius:18px;padding:20px}
+  .compare .h{font-size:11px;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--faint);font-weight:700}
+  .cp{margin-top:12px;font-size:14.5px;font-weight:600;color:var(--muted);
+    line-height:1.5}
+  .cp b{color:var(--ink);font-weight:800}
+  .cmp{margin-top:18px}
+  .cl{font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--win);font-weight:800;margin-bottom:8px}
+  .cmp video{width:100%;display:block;border-radius:10px;background:#000}
+  /* the 6-wide strip is right on a laptop, the 3x2 grid on a phone */
+  .cmp video.wide{display:none}
+  @media (min-width:900px){
+    .wrap{max-width:1180px}
+    .cmp video.wide{display:block}
+    .cmp video.tall{display:none}
+  }
   .how{margin-top:18px;background:var(--panel);border:1px solid var(--ring);
     border-radius:18px;padding:20px}
   .how .h{font-size:11px;letter-spacing:.16em;text-transform:uppercase;
@@ -69,6 +87,35 @@
     trials and let the numbers pick the winner.</p>
 </header>
 
+<section class="compare">
+  <div class="h">Your original, next to the five</div>
+  <p class="cp">Far left is <b>your reel, untouched</b>. The five beside it are
+    what we made from it. They all start at the same moment, so you can watch
+    them come apart: different opening, different framing, different length,
+    a different hook on each. No new footage was shot.</p>
+  
+    <div class="cmp">
+      <div class="cl">1.6M plays</div>
+      <video class="wide" src="c/DaA132PC6Jk_row.mp4" controls playsinline preload="none"
+        poster=""></video>
+      <video class="tall" src="c/DaA132PC6Jk_grid.mp4" controls playsinline preload="none"
+        poster=""></video>
+    </div>
+    <div class="cmp">
+      <div class="cl">591K plays</div>
+      <video class="wide" src="c/DYxMaTAicgp_row.mp4" controls playsinline preload="none"
+        poster=""></video>
+      <video class="tall" src="c/DYxMaTAicgp_grid.mp4" controls playsinline preload="none"
+        poster=""></video>
+    </div>
+    <div class="cmp">
+      <div class="cl">249K plays</div>
+      <video class="wide" src="c/DZqFKmKO_9d_row.mp4" controls playsinline preload="none"
+        poster=""></video>
+      <video class="tall" src="c/DZqFKmKO_9d_grid.mp4" controls playsinline preload="none"
+        poster=""></video>
+    </div>
+</section>
 <div class="how">
   <div class="h">How to use them</div>
   <ol>
